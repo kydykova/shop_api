@@ -38,3 +38,5 @@ class ProductImageSerializer(serializers.ModelSerializer):
     class Meta:
         model=ProductImage
         fields='all'
+
+

@@ -18,7 +18,7 @@ class PermissionMixin:
     
 
 class CategoryViewSet(PermissionMixin,ModelViewSet):
-    queryset=Category.objects,all()
+    queryset=Category.objects.all()
     serializer_class=CategorySerializer 
 
 class ProductViewSet(PermissionMixin,ModelViewSet):
@@ -38,3 +38,5 @@ class ProductImageView(generics.CreateAPIView):
     queryset=ProductImage.objects.all()
     serializer_class=ProductImageSerializer
     permission_classes=[IsAdminUser]
+
+

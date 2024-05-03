@@ -41,14 +41,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
     # libs
     "rest_framework",
     "rest_framework_simplejwt",
     "django_filters",
     "drf_yasg",
+
     # apps
-    'account'
-    'product'
+    'account',
+    'product',
+    'order'
 ]
 
 MIDDLEWARE = [
@@ -134,8 +137,8 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "static"
 
-MEDIA_URL = "product_img"
-MEDIA_ROOT = BASE_DIR / "product_img"
+MEDIA_URL = "product_img/"
+MEDIA_ROOT = BASE_DIR / "product_img/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
